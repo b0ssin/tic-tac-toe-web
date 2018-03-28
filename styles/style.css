@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+
+.win {
+    font-weight: 900;
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.board {
+    margin-top: 5%;
+}
+
+.game-piece {
+    margin-top: auto;
+    border: 1px solid black;
+    width: 68px;
+    height: 68px;
+    display: inline-block;
+}
+
+.row {
+    justify-content: center;
+    text-align: center;
+}
+
+#startButton {
+    margin-top: 5%;
+}
+
+#modal {
+    margin-bottom: 5%;
+}

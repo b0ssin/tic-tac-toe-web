@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="logic/ttt.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="modal">
+            <!-- Button trigger modal -->
+            <div class="text-center">
+                <button id="startButton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#gameStart">
+                    Play Tic Tac Toe
+                </button>
+            </div>
+            
+            
+            <!-- Modal -->
+            <div class="modal fade" id="gameStart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="gameStateLabel">Choose your piece</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="x">X</button>
+                            <span>or</span>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="o">O</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start of board -->
+        <div id="board">
+            <div class="row">
+                <div id="one" class="game-piece"></div>
+                <div id="two" class="game-piece"></div>
+                <div id="three" class="game-piece"></div>
+            </div>
+
+            <div class="row">
+                <div id="four" class="game-piece"></div>
+                <div id="five" class="game-piece"></div>
+                <div id="six" class="game-piece"></div>
+            </div>
+
+            <div class="row">
+                <div id="seven" class="game-piece"></div>
+                <div id="eight" class="game-piece"></div>
+                <div id="nine" class="game-piece"></div>
+            </div>
+            
+            
+            
+        </div>
+        <h1 id="indicator"></h1>
+    </div>
+</body>
+</html>
